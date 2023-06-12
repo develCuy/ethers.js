@@ -23565,6 +23565,10 @@
 	    "arbitrum-goerli": { chainId: 421613, name: "arbitrum-goerli" },
 	    bnb: { chainId: 56, name: "bnb" },
 	    bnbt: { chainId: 97, name: "bnbt" },
+	    syscoin: { chainId: 57, name: "syscoin" },
+	    "syscoin-tanenbaum": { chainId: 5700, name: "syscoin-tanenbaum" },
+	    rollux: { chainId: 570, name: "rollux" },
+	    "rollux-tanenbaum": { chainId: 57000, name: "rollux-tanenbaum" },
 	};
 	/**
 	 *  getNetwork
@@ -29069,6 +29073,10 @@
 	            return "rpc.ankr.com/polygon/";
 	        case "arbitrum":
 	            return "rpc.ankr.com/arbitrum/";
+	        case "syscoin":
+	            return "rpc.ankr.com/syscoin/";
+	        case "rollux":
+	            return "rpc.ankr.com/rollux/";
 	    }
 	    return logger.throwArgumentError("unsupported network", "name", name);
 	}
