@@ -29,6 +29,12 @@ function getHost(name: string): string {
 
         case "arbitrum":
             return "rpc.ankr.com/arbitrum/";
+
+        case "syscoin":
+            return "rpc.ankr.com/syscoin/";
+
+	case "rollux":
+            return "rpc.ankr.com/rollux/";
     }
     return logger.throwArgumentError("unsupported network", "name", name);
 }
